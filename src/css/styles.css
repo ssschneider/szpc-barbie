@@ -1,0 +1,99 @@
+body {
+    background-image: url("../images/background.svg");
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.4rem 0;
+}
+
+header > h1 > img {
+    width: 20rem;
+    filter: drop-shadow(0px 0px 5px #f1f1f1);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.characters {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    max-width: 58.5rem;
+}
+
+.characters h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+    border-bottom: 2px solid #f1f1f1;
+    width: 100%;
+    text-align: center;
+}
+
+.characters .characters-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    flex-wrap: wrap;
+    gap: 3rem;
+    place-items: center;
+    cursor: pointer;
+}
+
+.characters .characters-list .character img {
+    width: 12.5rem;
+    border-radius: .8rem;
+    border-bottom: 5px solid #f0008c;
+}
+
+.characters .characters-list .character.selected {
+    border-radius: .8rem;
+    box-shadow: 0px 0px 24px 5px #f1f1f1;
+}
+
+.character-selected {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 55rem;
+    flex: 1;
+}
+
+.character-selected .character-large {
+    max-width: 47rem;
+    max-height: 31.5rem;
+    filter: drop-shadow(10px 0px 5px #f0008C);
+    object-fit: cover;
+}
+
+.character-selected .character-infos {
+    background-color: #f1f1f1;
+    border-radius: .8rem;
+    width: 100%;
+    padding: 1.6rem;
+    text-align: center;
+    border-bottom: 5px solid #f0008c;
+}
+
+.character-selected .character-infos #character-name {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #f0008c;
+}
+
+.character-selected .character-infos #character-description {
+    font-size: 2.2rem;
+    line-height: 150%;
+    color: #f83996;
+}

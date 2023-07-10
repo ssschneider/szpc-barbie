@@ -1,0 +1,31 @@
+@media screen and (max-width: 1200px) {
+    main {
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .characters .characters-list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .character-selected .character-large {
+        max-width: 45rem;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .characters h2 {
+        font-size: 3.2rem;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .characters h2 {
+        font-size: 3.2rem;
+        width: 90%;
+    }
+}

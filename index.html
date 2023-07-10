@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Barbie | Semana do Zero ao Programador Contratado</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+</head>
+<body>
+    <header>
+        <h1>
+            <img src="src/images/logo-barbie.png" alt="Logo da Barbie">
+        </h1>
+    </header>
+
+    <main>
+        <section class="characters">
+            <h2>Selecione a sua Barbie (ou só algum Ken)</h2>
+
+            <ul class="characters-list">
+                <li 
+                    class="character selected" 
+                    id="barbie"
+                    data-name="Barbie"
+                    data-description="A Barbie é tudo!"
+                >
+                    <img src="src/images/card-barbie.jpeg" alt="Barbie">
+                </li>
+
+                <li 
+                    class="character" 
+                    id="human" 
+                    data-name="Barbie Humana"
+                    data-description="Essa Barbie é Humana!"
+                >
+                    <img src="src/images/card-human.webp" alt="Barbie Humana">
+                </li>
+
+                <li 
+                    class="character" 
+                    id="president"
+                    data-name="Barbie Presidente"
+                    data-description="Essa Barbie é Presidente!"
+                >
+                    <img src="src/images/card-president.jpg" alt="Barbie Presidente">
+                </li>
+
+                <li 
+                    class="character" 
+                    id="weird"
+                    data-name="Barbie Estranha"
+                    data-description="Essa Barbie sempre está em problemas!"
+                >
+                    <img src="src/images/card-weird.jpg_large" alt="Barbie Estranha">
+                </li>
+
+                <li 
+                    class="character" 
+                    id="ken"
+                    data-name="Ken"
+                    data-description="Ele é só o Ken"
+                >
+                    <img src="src/images/card-ken.webp" alt="Ken">
+                </li>
+
+                <li 
+                    class="character" 
+                    id="ken-too"
+                    data-name="Ken (Também)"
+                    data-description="Ele também é o Ken"
+                >
+                    <img src="src/images/card-ken-too.jpeg" alt="Ken">
+                </li>
+
+                <li 
+                    class="character" 
+                    id="another-ken"
+                    data-name="(Outro) Ken"
+                    data-description="Esse é outro Ken."
+                >
+                    <img src="src/images/card-another-ken.jpeg" alt="Ken">
+                </li>
+
+                <li 
+                    class="character" 
+                        id="alan"
+                        data-name="Allan"
+                        data-description="Só tem um Allan!"
+                >
+                    <img src="src/images/card-alan.jpg" alt="Alan">
+                </li>
+            </ul>
+        </section>
+
+        <section class="character-selected">
+            <img src="src/images/selected-barbie.png" alt="Barbie (ou só um Ken) selecionada" class="character-large">
+
+            <div class="character-infos">
+                <h3 id="character-name">Barbie</h3>
+                <p id="character-description">A Barbie é tudo!</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="src/js/index.js"></script>
+</body>
+</html>
